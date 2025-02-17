@@ -38,8 +38,7 @@ const getKadai8_3_2 = (req, res) => {
 
     for (let i = 0; i < fruit.length; i++){
         if (fruit[i].en == req.params.en) {
-            res.send( fruit[i] )
-            break
+            return res.send( fruit[i] )
         }
     }
 
