@@ -36,20 +36,20 @@ const getKadai8_3_2 = (req, res) => {
         
     ]
 
-    for (let i = 1; i <= fruit.length; i++){
+    for (let i = 0; i < fruit.length; i++){
         if (fruit[i].en == req.params.en) {
             res.send( fruit[i] )
-        }
-        else{
-            res.send(
-                JSON.stringify({
-                    status: "error",
-                    en: req.params.en,
-                    cause: "not found!"
-                })
-            )
+            break
         }
     }
+
+    res.send(
+        JSON.stringify({
+            status: "error",
+            en: req.params.en,
+            cause: "not found!"
+            })
+     )
 }
 
 export const q8_3Controller = {
