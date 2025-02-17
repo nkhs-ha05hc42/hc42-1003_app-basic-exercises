@@ -106,5 +106,5 @@ export const q8_2Controller = {
     getKadai8_2_1,
     postKadai8_2_2,
     putKadai8_2_3,
-    deleteKadai8_2_4,
+    deleteKadai8_2_4
 }
